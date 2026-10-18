@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+</head>
+
+<body>
+    <h1>Log In</h1>
+    
+    <form id="login-form">
+        <label for="login-email">Email</label>
+        <input type="email" name="email" id="login-email" required placeholder="example123@gmail.com">
+        <br><br>
+
+        <label for="login-password">Password</label>
+        <input type="password" name="password" id="login-password" required placeholder="Your password">
+        <br><br>
+
+        <button id="submit-button" type="submit">Submit</button>
+        <br>
+        <p>Don't have an account?<a href="sign-up.html"> Sign up</a></p>
+    </form>
+
+    <!-- External Library & Main Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bcryptjs/2.4.3/bcrypt.min.js"></script>
+    <script src="log-in.js"></script>
+</body>
+
+</html>
