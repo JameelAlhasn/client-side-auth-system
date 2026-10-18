@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+
+<body>
+    <h1>Sign Up</h1>
+
+    <form id="signup-form">
+        <label for="signup-email">Email</label>
+        <input type="email" name="email" id="signup-email" required placeholder="example@domain.com">
+        <br><br>
+
+        <label for="signup-password">Password</label>
+        <input type="password" name="password" id="signup-password" required minlength="8"
+            placeholder="8-20 characters">
+        <br><br>
+
+        <label for="signup-password-confirm">Confirm Password</label>
+        <input type="password" name="password" id="signup-password-confirm" required minlength="8"
+            placeholder="Confirm password">
+        <br><br>
+
+        <button id="submit-button" type="submit">Submit</button>
+        <br><br>
+        <p>Already have an account? <a href="log-in.html">Log in</a></p>
+    </form>
+
+    <!-- External Library & Main Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bcryptjs/2.4.3/bcrypt.min.js"></script>
+    <script src="sign-up.js"></script>
+</body>
+
+</html>
